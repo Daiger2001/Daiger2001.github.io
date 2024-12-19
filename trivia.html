@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Música de fondo -->
+    <audio id="background-music" autoplay loop>
+        <source src="Audio/Fondo.mp3" type="audio/mp3">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+    
+    <div class="content">
+        <img src="imagenes/logo.png" alt="" class="logo">
+        <div id="gif-container">
+            <img id="gif-normal" src="animacion/comp-3.gif" alt="Normal" style="display:block;">
+            <img id="gif-correct" src="animacion/comp-2.gif" alt="Correcto" style="display:none;">
+            <img id="gif-incorrect" src="animacion/comp-4.gif" alt="Incorrecto" style="display:none;">
+        </div>
+        <div id="menu-container" class="menu-container"></div>
+        <div id="question-container" class="question-container" style="display: none;"></div>
+    </div>
+
+    <a href="index.html" class="back-button">Volver al Inicio</a>
+    <button id="open-credits">Ver Créditos</button>
+
+<div id="credits-modal" class="modal">
+    <div class="modal-content">
+        <span id="close-credits" class="close-button">&times;</span>
+        <div class="credits-container">
+            <h2>Créditos</h2>
+            <p>Desarrollado por:</p>
+            <ul>
+                <li><strong>Derek Carmilema:</strong> Diseño de interfaz y funcionalidad.</li>
+                <li><strong>Miguel Quelal:</strong> Lógica del juego y efectos interactivos.</li>
+            </ul>
+            <p>Herramientas: HTML, CSS, JavaScript</p>
+        </div>
+    </div>
+</div>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+.credits-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.credits-container h2 {
+    color: #ffd700;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.credits-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.credits-container ul li {
+    margin: 5px 0;
+    font-size: 1.1rem;
+}

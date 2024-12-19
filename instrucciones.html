@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrucciones</title>
+    <link href="styles1.css" rel="stylesheet">
+</head>
+<body>
+    <div class="content">
+        <img src="imagenes/logo.png" alt="Logo" class="logo">
+        <h2>Instrucciones del Juego</h2>
+        <div class="question-container">
+            <p>Lee atentamente las instrucciones:</p>
+            <div class="instructions">
+                <p>Responde las preguntas dentro del tiempo límite.</p>
+                <p>El puntaje máximo es 100 puntos.</p>
+                <p>¡No olvides disfrutar el juego!</p>
+            </div>
+            
+            <button onclick="window.location.href='trivia.html'">Ir a la Trivia</button>
+            
+
+
+        </div>
+    </div>
+    <script>
+        document.getElementById("start-trivia-btn").addEventListener("click", () => {
+            window.location.href = "trivia.html";
+        });
+    </script>
+</body>
+</html>

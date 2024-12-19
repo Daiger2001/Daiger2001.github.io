@@ -1,0 +1,254 @@
+/* Estilo general para centrar todo */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #002b5b, #001f40); /* Fondo degradado azul oscuro */
+    color: white; /* Texto principal blanco */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    text-align: center;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.8); /* Fondo negro semitransparente */
+    border-radius: 15px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); /* Sombra */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinear contenido al centro */
+    justify-content: center; /* Centrar verticalmente el contenido interno */
+}
+
+/* Logo */
+.logo {
+    width: 800px; /* Tamaño ajustado para mantener proporción */
+    margin-bottom: 20px; /* Espaciado debajo del logo */
+}
+
+/* Títulos destacados */
+h1, h2 {
+    font-size: 2rem;
+    color: #ffd700; /* Dorado */
+    text-transform: uppercase;
+    text-shadow: 0 2px 4px rgba(255, 215, 0, 0.8); /* Sombra al texto */
+    margin-bottom: 20px;
+}
+
+/* Texto secundario */
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ffffff; /* Blanco */
+    margin-bottom: 20px;
+}
+
+/* Botones generales */
+button {
+    background: linear-gradient(45deg, #ffd700, #ffbf00); /* Gradiente dorado */
+    color: #002b5b; /* Azul oscuro */
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background: linear-gradient(45deg, #ffbf00, #ffa500); /* Gradiente más brillante */
+    transform: scale(1.05); /* Crece ligeramente */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Botón de acción en la bienvenida */
+.welcome-button {
+    margin-top: 20px;
+}
+
+/* Formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+label {
+    font-size: 1rem;
+    color: #ffd700; /* Texto dorado */
+}
+
+input, select {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: #ffffff; /* Fondo blanco */
+    color: #002b5b; /* Texto azul oscuro */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+input:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ffd700; /* Sombra dorada */
+}
+
+/* Instrucciones */
+.instructions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.instructions-list li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.1); /* Fondo blanco semitransparente */
+    padding: 10px;
+    border-radius: 5px;
+    color: #ffffff; /* Texto blanco */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.instructions-list li::before {
+    content: "★"; /* Ícono decorativo */
+    color: #ffd700; /* Dorado */
+    margin-right: 10px;
+}
+
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 18px;
+    background-color: #ff6f61; /* Color atractivo */
+    border: none;
+    border-radius: 8px; /* Bordes redondeados */
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff; /* Texto blanco */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    z-index: 1000; /* Siempre visible */
+}
+
+.back-button:hover {
+    background-color: #ff867c; /* Color más claro al pasar el mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más fuerte */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+.back-button:active {
+    transform: translateY(0); /* Efecto de clic */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Animación de fade-in general para todo el cuerpo */
+body {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Efecto de entrada desde abajo en secciones principales */
+.section-container {
+    animation: slideInUp 1s ease-out;
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Animación sutil en botones */
+button, .level-button, .listen-button {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+}
+
+button:hover, .level-button:hover, .listen-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Animación de fondo */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('imagenes/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+    animation: pulseBackground 10s infinite ease-in-out;
+}
+
+@keyframes pulseBackground {
+    0% { filter: brightness(1); }
+    50% { filter: brightness(1.2); }
+    100% { filter: brightness(1); }
+}
+
+/* Animación de la introducción del logo */
+.logo {
+    animation: bounceIn 1.5s ease-in-out;
+}
+
+@keyframes bounceIn {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+/* Animación para el contenedor de preguntas */
+.question-container {
+    animation: slideInRight 1s ease-out;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Animación al cambiar de sección */
+.fade-out {
+    animation: fadeOut 1s ease-in-out;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
